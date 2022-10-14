@@ -1,27 +1,22 @@
 #include <stdio.h>
 
 /**
- *main - prints hexadecimal base 0123456789abcdef, using putchar
- *Return: Always 0 (Success)
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n = '0';
-	int a_to_f = 'a';
+	int n;
 
-	while (n <= '9') /*print 0-9*/
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
-		n++;
-	}
-
-	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
-	{
-		putchar(a_to_f);
-		a_to_f++;
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
