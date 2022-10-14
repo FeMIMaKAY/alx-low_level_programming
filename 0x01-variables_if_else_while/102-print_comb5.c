@@ -26,7 +26,7 @@ int main(void)
 					putchar(t);
 					putchar(o);
 
-					if (!((tens == '9' && ones == '8') &&
+		if (!((tens == '9' && ones == '8') &&
 					      (t == '9' && o == '9')))
 					{
 						putchar(',');

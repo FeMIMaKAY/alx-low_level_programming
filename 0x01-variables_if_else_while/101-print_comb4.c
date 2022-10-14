@@ -20,7 +20,7 @@ int main(void)
 				putchar(hundred);
 				putchar(ten);
 				putchar(one);
-				if (hundred != '7' || ten != '8' || one != '9')
+			if (hundred != '7' || ten != '8' || one != '9')
 				{
 					putchar(',');
 					putchar(' ');
@@ -29,5 +29,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
