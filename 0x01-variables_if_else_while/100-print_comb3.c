@@ -1,37 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 89.
+ *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
  *
- * Return: Always 0 (Success)
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i, e;
+	int ones;
+	int tens;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (tens = '0'; tens <= '9'; tens++) /*increment tens*/
 	{
-		i = 48;
-		while (i < 58)
+		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
 		{
-			if (e != i && e < i)
-            {
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
+			putchar(tens);
+			putchar(ones);
+
+			if (tens != '8' || ones != '9') /*print commas*/
+			{
 				putchar(',');
 				putchar(' ');
 			}
-			i++;
 		}
-		e++;
 	}
 	putchar('\n');
 	return (0);
-    }
+}

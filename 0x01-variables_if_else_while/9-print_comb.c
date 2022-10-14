@@ -21,8 +21,6 @@ int main(void)
 		putchar(a_to_f);
 		a_to_f++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
