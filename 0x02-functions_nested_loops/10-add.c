@@ -1,20 +1,13 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
- * add: - adds two integers
- * @n1: integer 1
- * @n2: integer 2
- *
- * Description: give two integers, returns sum
- *
- * Return: sum
- */
-
-int add(int n1, int n2)
+* add - computes the result of the addition of 2 integers
+*@a: right operand
+*@b: left operand
+* Return: returns the result
+*/
+int add(int a, int b)
 {
-	int sum;
-
-	sum = n1 + n2;
-
-	return (sum);
+return (a + b);
 }
