@@ -10,7 +10,7 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
-		putchar(n);
+	    putchar(n);
 		if (n != 57)
 		{
 			putchar(',');
@@ -21,3 +21,5 @@ int main(void)
 
 	return (0);
 }
+
+//preprocessing -E
