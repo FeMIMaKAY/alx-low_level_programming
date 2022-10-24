@@ -14,16 +14,16 @@ void rev_string(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		i++;
+	i++;
 	}
 	max = i - 1;
 	half = max / 2;
 	while (half >= 0)
 	{
-		first = s[max - half];
-		last = s[half];
-		s[half] = first;
-		s[max - half] = last;
-		half--;
+	first = s[max - half];
+	last = s[half];
+	s[half] = first;
+	s[max - half] = last;
+	half--;
 	}
 }
