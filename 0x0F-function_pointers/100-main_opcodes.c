@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
+	char *opc = (char *) main;	
+
 	nbytes = atoi(argv[1]);
 
 	if (nbytes < 0)
